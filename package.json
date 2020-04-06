@@ -1,0 +1,44 @@
+{
+  "name": "electron-gui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^8.2.0",
+    "electron-builder": "^22.4.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1",
+    "python-shell": "^1.0.8"
+  },
+  "build": {
+    "appId": "pl.test",
+    "asar": false,
+    "files": [
+      "python/**/*",
+      "node_modules/**/*",
+      "bootstrap/**/*",
+      "index.js",
+      "events.js",
+      "index.html"
+    ],
+    
+    "publish": null
+   
+
+  
+
+  
+  }
+  
+}

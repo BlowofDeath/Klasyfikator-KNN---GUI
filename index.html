@@ -1,0 +1,82 @@
+<html>
+<head>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+
+    <script>let $ = require('jquery');</script>
+    <script>require('popper.js');</script>
+    <script>require('bootstrap');</script>
+    <script src="events.js"></script>
+    <style>
+   
+        div.left-content {
+            background-color: #212122;
+            color: gainsboro;
+            padding: 0;
+            padding-top: 10px;
+        }
+        div.right-content {
+            background-color: #2c2c30;
+            overflow-y: scroll;
+            padding-top: 20px;
+            color: rgb(224, 221, 221);
+        }
+        #errorlog {
+            background-color: rgb(24, 27, 27);
+            position : absolute;
+            bottom: 0;
+            height: 100px;
+            overflow-y: scroll;
+            color:rgb(230, 18, 18)
+        }
+
+        form {
+            padding: 10px;
+        }
+
+        button {
+            margin-right: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row h-100">
+            <div class="col-4 h-100 left-content">
+                <form onsubmit="event.preventDefault()">
+                    <h2>Knn</h2>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-4 col-form-label">Próbka</label>
+                        <div class="col-8">
+                          <input class="form-control" type="text" value="1 34 3.4 -8" id="x-input">
+                        </div>
+                      </div>
+                    <div class="form-group row">
+                        <label for="example-number-input" class="col-4 col-form-label">K</label>
+                        <div class="col-8">
+                          <input class="form-control" type="number" value="3" id="k-input">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Wprowadź plik z danymi</label>
+                        <input type="file" class="form-control-file" id="datafile" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" onclick="getData(1)">Klasyfikuj</button>
+                        <button type="button" class="btn btn-primary" onclick="clearData()">Wyczyść</button>
+                        <button type="submit" class="btn btn-primary" onclick="getData(2)">Szukaj k</button>
+                    </div>
+                </form>
+                <div class="col-12" id="errorlog"></div>
+            
+            </div>
+            <div class="col-8 h-100 right-content">
+                <h2>Dane:</h2>
+                <div id="data" class="overflow-auto"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
