@@ -10,6 +10,7 @@ function createWindow () {
     },
     title: "Klasyfikator Knn",
     frame: true,
+    icon: __dirname + '/logo.png'
   })
 
   // and load the index.html of the app.
@@ -27,7 +28,7 @@ app.whenReady().then(function (){
     ]
   }]
   const menu = Menu.buildFromTemplate(template)
-  //Menu.setApplicationMenu(null);
+  Menu.setApplicationMenu(null);
 })
 
 app.on('window-all-closed', () => {
