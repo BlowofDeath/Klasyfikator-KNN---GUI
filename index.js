@@ -28,7 +28,7 @@ app.whenReady().then(function (){
     ]
   }]
   const menu = Menu.buildFromTemplate(template)
-  //Menu.setApplicationMenu(null);
+  Menu.setApplicationMenu(null);
 })
 
 app.on('window-all-closed', () => {

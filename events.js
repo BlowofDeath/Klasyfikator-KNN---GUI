@@ -51,7 +51,7 @@ function getData(script_number) {
     
     // end the input stream and allow the process to exit
     pyshell.end(function (err,code,signal) {
-      if (err) throw err;//$("#errorlog").prepend("Błąd z plikiem lub wprowadzono dane w złym formacie<br />");
+      if (err) $("#errorlog").prepend("Błąd z plikiem lub wprowadzono dane w złym formacie<br />");
       console.log('The exit code was: ' + code);
       console.log('The exit signal was: ' + signal);
       console.log('finished');
@@ -65,7 +65,10 @@ function clearData() {
 
 function saveData() {
   let data = $("#data").text();
-  try { fs.writeFileSync('Klasyfikator KNN output.txt', data, 'utf-8'); }
+  try { 
+    fs.writeFileSync('Klasyfikator KNN output.txt', data, 'utf-8'); 
+    $("#errorlog").prepend("Dane zostały zapisane w folderze głównym programu<br />");
+  }
   catch(e) { alert('Failed to save the file !'); }
 }
 
