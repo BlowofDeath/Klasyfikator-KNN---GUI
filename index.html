@@ -31,12 +31,12 @@
             color: rgb(224, 221, 221);
         }
         #errorlog {
-            background-color: rgb(24, 27, 27);
+            background-color: rgb(24, 24, 24);
             position : absolute;
             bottom: 0;
-            height: 100px;
+            height: 150px;
             overflow-y: scroll;
-            color:rgb(230, 18, 18)
+            color:rgb(151, 129, 129)
         }
 
         form {
@@ -46,6 +46,24 @@
         button {
             margin-right: 10px;
             margin-top: 20px;
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #202025; 
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888; 
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555; 
         }
     </style>
 </head>
