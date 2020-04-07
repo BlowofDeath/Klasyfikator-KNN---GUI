@@ -1,0 +1,145 @@
+List of k with largest accuracy:  [3, 6, 12]
+Largest accuracy:  97.33333333333333
+For k =  49
+Accuracy = 89.33333333333333%
+All = 150: Correct = 134
+For k =  48
+Accuracy = 89.33333333333333%
+All = 150: Correct = 134
+For k =  47
+Accuracy = 90.0%
+All = 150: Correct = 135
+For k =  46
+Accuracy = 90.66666666666666%
+All = 150: Correct = 136
+For k =  45
+Accuracy = 91.33333333333333%
+All = 150: Correct = 137
+For k =  44
+Accuracy = 94.0%
+All = 150: Correct = 141
+For k =  43
+Accuracy = 94.66666666666666%
+All = 150: Correct = 142
+For k =  42
+Accuracy = 95.33333333333333%
+All = 150: Correct = 143
+For k =  41
+Accuracy = 95.33333333333333%
+All = 150: Correct = 143
+For k =  40
+Accuracy = 96.0%
+All = 150: Correct = 144
+For k =  39
+Accuracy = 96.0%
+All = 150: Correct = 144
+For k =  38
+Accuracy = 96.0%
+All = 150: Correct = 144
+For k =  37
+Accuracy = 96.0%
+All = 150: Correct = 144
+For k =  36
+Accuracy = 96.0%
+All = 150: Correct = 144
+For k =  35
+Accuracy = 96.0%
+All = 150: Correct = 144
+For k =  34
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  33
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  32
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  31
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  30
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  29
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  28
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  27
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  26
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  25
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  24
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  23
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  22
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  21
+Accuracy = 95.33333333333333%
+All = 150: Correct = 143
+For k =  20
+Accuracy = 95.33333333333333%
+All = 150: Correct = 143
+For k =  19
+Accuracy = 95.33333333333333%
+All = 150: Correct = 143
+For k =  18
+Accuracy = 95.33333333333333%
+All = 150: Correct = 143
+For k =  17
+Accuracy = 96.0%
+All = 150: Correct = 144
+For k =  16
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  15
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  14
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  13
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  12
+Accuracy = 97.33333333333333%
+All = 150: Correct = 146
+For k =  11
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  10
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  9
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  8
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  7
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  6
+Accuracy = 97.33333333333333%
+All = 150: Correct = 146
+For k =  5
+Accuracy = 96.66666666666666%
+All = 150: Correct = 145
+For k =  4
+Accuracy = 96.0%
+All = 150: Correct = 144
+For k =  3
+Accuracy = 97.33333333333333%
+All = 150: Correct = 146
+ Szukanie odpowiedniego k:
+
