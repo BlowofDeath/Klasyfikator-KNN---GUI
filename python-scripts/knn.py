@@ -1,10 +1,11 @@
+# -*- coding: utf-8 -*-
 import math
 import sys
 import numpy as np
 from csv import reader
 import metrics
 import argparse
-
+sys.stdout.reconfigure(encoding='utf-8')
 parser=argparse.ArgumentParser()
 
 parser.add_argument('--datafilepath', '-d', help='Path to data')
@@ -90,9 +91,9 @@ def oneVsRest(A, k):
 
         if(resoult == temp[temp.size-1]):
             correct+=1
-    print("All = "+str(A.shape[0])+": Correct = "+str(correct))
+    print("Wszystkie = "+str(A.shape[0])+'\t'+"Poprawne = "+str(correct))
     accuracy = (100/A.shape[0]) * correct
-    print("Accuracy = " +str(accuracy)+"%")
+    print(u"Dokładność = "+str(accuracy)+"%")
     return accuracy
         
 def lookingForK(A):
@@ -105,15 +106,15 @@ def lookingForK(A):
     resoults = {}
     for i in range(3,minimum):
         resoults.update({i: oneVsRest(A, i)})
-        print("For k = ", i)
+        print("Dla k = ", i)
     maximum = max(resoults.values())
     
-    print("Largest accuracy: ",maximum)
+    print("Największa dokładność: ",maximum)
     tab = []
     for index, value in resoults.items():
         if value == maximum:
             tab.append(index)
-    print("List of k with largest accuracy: ",tab)
+    print("Lista k z największą dokładnością: ",tab)
     return tab
         
         
