@@ -1,7 +1,8 @@
 {
   "name": "electron-gui",
   "version": "1.0.1",
-  "description": "",
+  "description": "Klasyfikator KNN",
+  "author": "Tomasz Jabłoński",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
@@ -9,7 +10,6 @@
     "pack": "electron-builder --dir",
     "dist": "electron-builder"
   },
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "electron": "^8.2.0",
