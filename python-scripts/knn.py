@@ -29,7 +29,7 @@ metrics_dict = {
 
 
 
-def normalization(A):
+def normalization(A, x = None):
     for j in range(A[0].size-1):
         minimum = np.min(A[:,j])
         maximum = np.max(A[:,j])
@@ -109,7 +109,7 @@ def lookingForK(A):
         print("Dla k = ", i)
     maximum = max(resoults.values())
     
-    print("Największa dokładność: ",maximum)
+    print("Największa dokładność: ",maximum,"%")
     tab = []
     for index, value in resoults.items():
         if value == maximum:
@@ -127,20 +127,29 @@ with open(args.datafilepath, 'r') as csv_data:
     # Resoult=Knn(A,4, [2.5, 1.0, 4.0, 5.5])
     #oneVsRest(A,40)
     # print(Knn(A, 30, [2.5, 1.0, 4.0, 5.5]))
-    A = normalization(A)
+    
     if (args.scriptnumber == "1"):
-        x = args.x.split(" ")
-        x = [float(i) for i in x]
+        x_old = args.x.split(" ")
+        x_old = [float(i) for i in x_old]
+        x_old.append(0)
+       
+        A = np.insert(A, 0, x_old, 0)
+        A = normalization(A)
+        x = A[0]
+        x = x[:len(x)-1]
+        A = np.delete(A, 0, 0)
+
         if(len(x) != A.shape[1] - 1):
             raise ValueError('Probe length different then data')
         k = int(args.k)
         print('\n')
         print("Knn = ",Knn(A, k, x))
-        print("x = ", x)
+        print("x = ", x_old)
         print("Dla k =", k)
         
         
     if (args.scriptnumber == "2"):
+        A = normalization(A)
         print('\n Szukanie odpowiedniego k:')
         lookingForK(A)
 

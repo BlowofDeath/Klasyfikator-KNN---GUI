@@ -66,8 +66,9 @@ function clearData() {
 function saveData() {
   let data = $("#data").text();
   try { 
-    fs.writeFileSync('Klasyfikator KNN output.txt', data, 'utf-8'); 
-    $("#errorlog").prepend("Dane zostały zapisane w folderze głównym programu<br />");
+    let filename = 'Klasyfikator KNN output.txt';
+    fs.writeFileSync(filename, data, 'utf-8'); 
+    $("#errorlog").prepend("Dane zostały zapisane w folderze głównym programu<br />" + __dirname + "\\"+filename+"<br />");
   }
   catch(e) { alert('Failed to save the file !'); }
 }

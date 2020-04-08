@@ -34,8 +34,6 @@ def minkowskiDistance(sample_one, sample_two, p):
 def logDistance(sample_one, sample_two):
     distance =0
     for i in range(len(sample_one)):
-        if sample_one[i] <= 0:
-            print(sample_one)
-        distance+= abs(math.log(sample_one[i]) - math.log(sample_two[i]))
+        distance+= abs(math.log(sample_one[i]+0.00001) - math.log(sample_two[i]+0.00001))
     return distance
 
