@@ -2,13 +2,19 @@
   "name": "electron-gui",
   "version": "1.0.1",
   "description": "Klasyfikator KNN",
-  "author": "Tomasz Jabłoński",
+  "author": {
+    "name": "Tomasz Jabłoński",
+    "email": "tjablonski@codeinq.pl",
+    "url": "https://codeinq.pl"
+  },
   "main": "index.js",
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder --linux --windows",
+    "dist-linux": "electron-builder --linux deb tar.xz"
+    
   },
   "license": "ISC",
   "devDependencies": {
@@ -43,6 +49,7 @@
       "icon": "build/logo.png",
       "publisherName": "Codeinq.pl"
     }
+ 
   }
   
   

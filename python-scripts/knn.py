@@ -152,6 +152,10 @@ with open(args.datafilepath, 'r') as csv_data:
         A = normalization(A)
         print('\n Szukanie odpowiedniego k:')
         lookingForK(A)
+    if (args.scriptnumber == "3"):
+        A = normalization(A)
+        oneVsRest(A,int(args.k))
+        print('\n Jeden kontra reszta dla k:',args.k)
 
     
     
